@@ -1,0 +1,16 @@
+# build output and IDE files
+target/
+.idea/
+*.iml
+log/
+logs/
+
+# apps (large binaries, download them instead)
+*.apk
+*.apk.idsig
+*.ipa
+apps/*.app/
+
+# secrets: never commit these
+browserstack.yml
+.env

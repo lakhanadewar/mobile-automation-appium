@@ -1,0 +1,22 @@
+{
+  "android": {
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    "appium:app": "bs://abd777641556d92d639e5a40e3134b426e01f8b3",
+    "bstack:options": {
+      "userName": "lakhan_FsuqpO",
+      "accessKey": "Ghys4A1CuCFixxVNpgFY",
+      "deviceName": "Google Pixel 7",
+      "osVersion": "13.0",
+      "projectName": "ApiDemos Appium Demo",
+      "sessionName": "Appium MCP check"
+    }
+  },
+  "ios": {
+    "platformName": "iOS",
+    "appium:automationName": "XCUITest",
+    "appium:deviceName": "iPhone 15",
+    "appium:platformVersion": "17.5",
+    "appium:app": "/Users/you/apps/UICatalog.app"
+  }
+}

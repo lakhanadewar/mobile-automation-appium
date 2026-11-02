@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "appium-mcp": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "appium-mcp@latest"],
+      "env": {
+        "ANDROID_HOME": "C:\\Users\\lakha\\AppData\\Local\\Android\\Sdk",
+        "CAPABILITIES_CONFIG": "C:\\Users\\lakha\\GenAI Project\\appium demo\\mcp\\capabilities.json",
+        "SCREENSHOTS_DIR": "C:\\Users\\lakha\\GenAI Project\\appium demo\\screenshots"
+      }
+    },
+    "browserstack": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@browserstack/mcp-server@latest"],
+      "env": {
+        "BROWSERSTACK_USERNAME": "your_username",
+        "BROWSERSTACK_ACCESS_KEY": "your_access_key"
+      }
+    }
+  }
+}

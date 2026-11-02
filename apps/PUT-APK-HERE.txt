@@ -1,0 +1,1 @@
+Download ApiDemos-debug.apk from https://github.com/appium/android-apidemos/releases and save it in this folder.
