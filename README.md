@@ -55,7 +55,8 @@ BROWSERSTACK_IOS_APP_ID       (bs://... from uploading the .ipa)
 | **Node.js 22 LTS** | Appium 3 and Appium MCP are Node apps (Appium needs 20.19+, Appium MCP needs 22+) | `node -v` |
 | **Android Studio** | Gives you the Android SDK, `adb` and the emulator | `adb version` |
 
-Set the environment variables once (PowerShell, then **open a new terminal**):
+Set the environment variables once 
+(PowerShell, then **open a new terminal**):
 
 ```powershell
 setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17.0.x-hotspot"
@@ -65,7 +66,8 @@ setx PATH "$env:PATH;C:\Users\lakha\AppData\Local\Android\Sdk\platform-tools;C:\
 
 Adjust the JDK folder name to whatever you installed.
 
-In Android Studio, open **Device Manager**, create a Pixel emulator (Android 13 or 14 image) and start it. Then:
+In Android Studio, open **Device Manager**, create a Pixel emulator (Android 13 or 14 image) and start it. 
+Then:
 
 ```powershell
 adb devices        # should list emulator-5554   device
@@ -172,7 +174,8 @@ Start the emulator first (Appium MCP starts its own Appium session, so you don't
 
 ### Use it on BrowserStack
 
-Appium MCP can attach to any remote Appium server. Ask:
+Appium MCP can attach to any remote Appium server. 
+Ask:
 
 > Create an Appium session with remoteServerUrl `https://YOUR_USERNAME:YOUR_ACCESS_KEY@hub-cloud.browserstack.com/wd/hub` and capabilities: platformName Android, appium:automationName UiAutomator2, appium:deviceName "Google Pixel 7", appium:platformVersion "13.0", appium:app "bs://...". Then open Preference > 3. Preference dependencies.
 
