@@ -145,7 +145,7 @@ mvn clean test -Dplatform=android -DrunOn=browserstack "-Dandroid.bs.device=Sams
 
 No local Appium server or emulator is needed for this step, because BrowserStack runs Appium for you on its hub `https://hub-cloud.browserstack.com/wd/hub`.
 
-**Alternative:** BrowserStack also offers the `browserstack-java-sdk` with a `browserstack.yml` file. It handles credentials, devices and parallel runs without code changes. The approach used here (plain `bstack:options` capabilities) is easier to understand and explain in an interview.
+**Alternative:** BrowserStack also offers the `browserstack-java-sdk` with a `browserstack.yml` file. It handles credentials, devices and parallel runs without code changes. This project uses plain `bstack:options` capabilities instead, so every setting is visible in the code.
 
 ## Step 6. Appium MCP (drive the app with AI)
 
@@ -188,5 +188,3 @@ The **BrowserStack MCP server** (`@browserstack/mcp-server`, already in the exam
 | `NoSuchElementException` | Check the locator in Appium Inspector. Screens differ slightly between Android versions |
 | BrowserStack `[BROWSERSTACK_INVALID_APP_CAP]` | The `bs://` ID is wrong or the upload has expired, so upload again |
 | Port 8200 in use (parallel local runs) | Give each device its own `appium:systemPort` |
-
-See `INTERVIEW-NOTES.md` for the concepts behind all of this.

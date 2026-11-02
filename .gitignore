@@ -14,3 +14,6 @@ apps/*.app/
 # secrets: never commit these
 browserstack.yml
 .env
+
+# personal study notes, kept locally only
+INTERVIEW-NOTES.md
